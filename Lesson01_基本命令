@@ -1,0 +1,62 @@
+Lesson 01
+
+1、进入后台后，一片漆黑，不知道在什么位置，首先先看看在当前位置：
+
+命令：pwd
+通常刚刚登陆，会在登陆用户的家目录下，root用户在/root/ ，XXX用户在/home/XXX/
+
+2、切换目录：
+
+命令：绝对路径 cd /XXX/XXX/XXX
+      相对路径 cd ../XXX/XXX 其中..代表上一级目录
+
+3、查看目录下的内容：
+
+命令：ls       当前目录下文件列表
+      ls -l    当前目录下文件详细信息
+      ls -a    当前目录下所有文件详细信息
+      ls /XXX  /XXX目录下文件列表
+
+4、复制文件／目录
+
+命令：cp /a/b/file /d/c/                  复制/a/b/file到/d/c/下
+      cp /a/b/file /a/b/file_new             
+      cp -r /a/b/document /c/d/           复制目录/a/b/document到/c/d/下，目录拷贝需要加参数
+      cp -r /a/b/document /a/b/document_2
+
+5、移动文件或重命名文件
+
+命令：mv /a/b/file /c/d/                  移动/a/b/file文件到/c/d/下
+      mv /a/b/file /a/b/file_new          重命名/a/b/file文件为file_new
+
+6、删除文件／目录
+
+命令：rm /a/b/file
+      rm -r /a/b/
+      rm -f /a/b/file
+
+7、查找文件
+
+命令：
+
+
+8、查看各个目录所占空间
+
+命令：
+
+
+9、查看文件内容
+
+命令：
+
+
+10、压缩／解压缩
+
+命令：
+
+
+11、清理屏幕
+
+命令：
+
+
