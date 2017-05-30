@@ -31,32 +31,47 @@ Lesson 01
 
 6、删除文件／目录
 
-命令：rm /a/b/file
-      rm -r /a/b/
-      rm -f /a/b/file
+命令：rm /a/b/file                        删除文件
+      rm -r /a/b/                         删除目录
+      rm -f /a/b/file                     强制删除文件
 
 7、查找文件
 
-命令：
+命令：find ./ -name file                  当前目录下查找名称为file的文件
+      find ./ -user XXX                   当前目录下查找用户为XXX的文件
+      find ./ -group XXX                  当前目录下查找属组为XXX的文件
+      find ./ -mtime -3                   。。。。。查找3天内被修改的文档
+      find ./ -mtime +3                   。。。。。。。3天前被修改的文档
+      find ./ -mtime 3                    。。。。。。。3天前当天被修改的文档
+      find ./ -size+100M                  。。。。。。。大于100M的文件
+      find ./ -type f                     。。。。。。。所有普通文件
 
 
 8、查看各个目录所占空间
 
-命令：
+命令：du -sh *                            当前目录下所有文件所占用的空间
+      df                                  系统所有磁盘使用和剩余空间
 
 
 9、查看文件内容
 
-命令：
+命令：cat file                            
+      cat file | less
+      tail -n file                        显示文件末尾n行的内容
+      tail -f file                        动态显示文件的更新，ctrl c退出
 
 
 10、压缩／解压缩
 
-命令：
+命令：tar zxf XXX.tar.gz                  将当前目录下的解压到当前目录下
+      tar zxf XXX.tar.gz -C /a/b          将当前目录下的XXX.tar.gz解压到/a/b/
+      tar zcf XXX.tar.gz XXX              压缩XXX为XXX.tar.gz
+      zip XXX.zip XXX -r                  zip压缩XXX为XXX.zip
+      unzip XXX.zip                       unzip解压缩XXX.zip为XXX
 
 
 11、清理屏幕
 
-命令：
+命令：clear
 
 
